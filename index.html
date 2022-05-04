@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Codificação</title>
+</head>
+
+<body>
+    <div class="box">
+        <form>
+            <fieldset class="grupo">
+                <legend><b>Escolha Seu Metodo:</b></legend>
+            <br>
+            <div class="campo" id="escolher">
+                <label form="option"><strong></strong></label>
+                <select name="escolha" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="um" id="cesar">Cifra de Cesar</option>
+                    <option value="dois" id="base">Base64</option>
+                </select>
+            </div>
+            <div class="campo" id="selectOption">
+                <label><strong>Codificar ou Decodificar:</strong></label>
+                <label>
+                    <input type="radio" id="codificar" name="devweb" value="frontend" checked>Codificar
+                </label>
+                <label>
+                    <input type="radio" id="decodificar" name="devweb" value="backend">Decodificar
+                </label>
+            </div>
+            <div class="passo" id="divPasso">
+                <input type="number" class="passoCifra" value="0" min="0" max="26" id="passoCifraCesar">
+            </div>
+            <div class="campo" id="divMsg">
+                <br>
+                <label><strong>Digite Sua Mensagem:</strong></label>
+                <textarea row="6" style="width: 26em" id="msg" name="msg"></textarea>
+            </div>
+            <div id="botao">
+            <button class="botao"  id="btn" type="submit">Codificar</button>
+            </div>
+            <div class="campo" id="divResultado">
+                <label><strong>Resultado:</strong></label>
+                <textarea row="6" style="width: 26em;" id="resultado" name="resultado"></textarea>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

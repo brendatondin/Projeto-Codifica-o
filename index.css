@@ -1,0 +1,126 @@
+/* Todos os elementos da página */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos de tag <fieldset> e <legend>*/
+fieldset{
+    border: 3px solid rgb(255, 208, 0);
+    border-radius: 5px;
+    padding: 1.3em;
+}
+
+legend {
+    border: 1px solid rgb(255, 208, 0);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 208, 0);
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: linear-gradient(to right, rgb(255, 208, 0), rgb(221, 181, 3)); */
+    /* background-image: url('./codigos\ foto.gif'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 4em
+}
+
+#escolher {
+    margin-left: 35%;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    /* color: #59429d; */
+    color: black;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+/* .gropo::before, .grupo:after{
+    display: table;
+} */
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+/* .grupo:after {
+    clear: both;
+} */
+
+/* Elementos de classe "campo" */
+.campo{
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label{
+    margin-bottom: 0.2em;
+    color: #59429d;
+    /* display: block; */
+    display: flex;
+    flex-direction: block;
+
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    /* float: left; */
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo select, .campo textarea {
+    padding: 0.2em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #f8f6e0;
+    /* background: rgb(255, 208, 0); */
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    /* background: #59429d; */
+    background: rgb(255, 208, 0);
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-left: 40%;
+    
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    /* background: #ccbbff; */
+    background-color: black;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select {
+    cursor: pointer;
+}
+
