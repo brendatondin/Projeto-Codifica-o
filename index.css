@@ -22,7 +22,7 @@ legend {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://i.gifer.com/origin/37/376a66dacbd417010b5eda0d46ada276.gif');
+    background-image: url('./img/376a66dacbd417010b5eda0d46ada276.gif');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
